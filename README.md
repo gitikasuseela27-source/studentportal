@@ -37,7 +37,9 @@ This project was created to learn:
 
 ## 📸 Screenshot
 
-(Add your project screenshot here later)
+## 📸 Screenshot
+
+![Student Event Portal](image.png)
 
 ---
 
