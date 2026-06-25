@@ -4,137 +4,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact Us</title>
+
+<!-- CSS File -->
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<a href="index.html" class="back-btn">
-⬅ Back to Home
-</a>
+<!-- Back navigation -->
+<a href="index.html">⬅ Back to Home</a>
 
+<!-- ================= CONTACT SECTION ================= -->
 <div class="contact-box">
 
 <h1>📧 Contact EventHub</h1>
 
-<p>
-Need help with registration,
-workshops, hackathons or event details?
-</p>
+<p>Send your queries or doubts</p>
 
-<br>
+<!-- Contact form connected to EmailJS -->
+<form id="contactForm">
 
-<p>
-<strong>Email:</strong>
-mahe230879@gmail.com
-</p>
+<input type="text" id="name" placeholder="Your Name" required>
 
-<br>
+<input type="email" id="email" placeholder="Your Email" required>
 
-<form onsubmit="sendMessage(event)">
+<textarea id="message" placeholder="Your Message" required></textarea>
 
-<input
-type="text"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-placeholder="Your Email"
-required>
-
-<textarea
-placeholder="Write your message here..."
-required>
-</textarea>
-
-<button type="submit">
-Send Message
-</button>
+<button type="submit">Send Message</button>
 
 </form>
 
 </div>
 
-<section class="faq">
-
-<h2>❓ Help Center</h2>
-
-<div class="faq-item">
-
-<h3>I didn't receive confirmation.</h3>
-
-<p>
-Please contact us through email and
-mention your registration details.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h3>Can I register for multiple events?</h3>
-
-<p>
-Yes, students can register for more
-than one event.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h3>Will certificates be provided?</h3>
-
-<p>
-Yes, participation certificates will
-be provided for eligible events.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h3>Can students from other departments participate?</h3>
-
-<p>
-Yes, students from all departments are
-welcome to participate.
-</p>
-
-</div>
-
-</section>
-
+<!-- ================= FOOTER ================= -->
 <footer>
 
 <h3>🎓 Student Event Management Portal</h3>
-
-<p>
-Workshops | Hackathons | Symposiums
-</p>
-
-<p>
-© 2026 EventHub
-</p>
+<p>© 2026 EventHub</p>
 
 </footer>
 
-<script>
-
-function sendMessage(event){
-
-event.preventDefault();
-
-alert(
-"✅ Message Sent Successfully!"
-);
-
-}
-
-</script>
+<!-- JavaScript file -->
+<script src="js/script.js"></script>
 
 </body>
-
 </html>

@@ -4,150 +4,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Event Registration</title>
+
+<!-- CSS File -->
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<a href="index.html" class="back-btn">
-⬅ Back to Home
-</a>
+<!-- Back button -->
+<a href="index.html">⬅ Back to Home</a>
 
+<!-- ================= REGISTRATION FORM ================= -->
 <div class="form-container">
 
-<h1>📝 Event Registration Form</h1>
+<h1>📝 Event Registration</h1>
 
-<p>
-Fill in your details to participate
-in upcoming events.
-</p>
+<p>Fill details to register for events</p>
 
-<form onsubmit="showSuccess(event)">
+<form id="registerForm">
 
-<input
-type="text"
-placeholder="Full Name"
-required>
+<!-- Student details -->
+<input type="text" id="studentName" placeholder="Full Name" required>
+<input type="text" id="regNo" placeholder="Register Number" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
 
-<input
-type="text"
-placeholder="Register Number"
-required>
-
-<input
-type="email"
-placeholder="College Email"
-required>
-
-<input
-type="tel"
-placeholder="Phone Number"
-required>
-
-<select required>
-
-<option value="">
-Select Department
-</option>
-
-<option>
-Computer Science Engineering
-</option>
-
-<option>
-Information Technology
-</option>
-
-<option>
-Artificial Intelligence & Data Science
-</option>
-
-<option>
-Electronics & Communication Engineering
-</option>
-
-<option>
-Electrical & Electronics Engineering
-</option>
-
-<option>
-Mechanical Engineering
-</option>
-
-<option>
-Civil Engineering
-</option>
-
+<!-- Dropdowns -->
+<select id="department" required>
+  <option value="">Department</option>
+  <option>CSE</option>
+  <option>IT</option>
 </select>
 
-<select required>
-
-<option value="">
-Select Year
-</option>
-
-<option>1st Year</option>
-
-<option>2nd Year</option>
-
-<option>3rd Year</option>
-
-<option>4th Year</option>
-
+<select id="year" required>
+  <option value="">Year</option>
+  <option>1st</option>
+  <option>2nd</option>
+  <option>3rd</option>
+  <option>4th</option>
 </select>
 
-<select required>
-
-<option value="">
-Select Event
-</option>
-
-<option>AI Workshop</option>
-
-<option>Cloud Computing Seminar</option>
-
-<option>Hackathon</option>
-
-<option>DevOps Workshop</option>
-
-<option>National Symposium</option>
-
-<option>Cyber Security Session</option>
-
+<select id="event" required>
+  <option value="">Event</option>
+  <option>AI Workshop</option>
+  <option>Hackathon</option>
 </select>
 
-<textarea
-placeholder="Why do you want to participate?"
-required>
-</textarea>
+<textarea id="reason" placeholder="Why do you want to participate?" required></textarea>
 
-<button type="submit">
-Register Now
-</button>
-
-<button type="reset">
-Reset Form
-</button>
+<button type="submit">Register</button>
 
 </form>
 
 </div>
 
-<script>
+<!-- ================= FOOTER ================= -->
+<footer>
 
-function showSuccess(event){
+<h3>🎓 Student Event Management Portal</h3>
+<p>© 2026 EventHub</p>
 
-event.preventDefault();
+</footer>
 
-alert(
-"🎉 Registration Successful!\n\nThank you for registering."
-);
-
-}
-
-</script>
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
