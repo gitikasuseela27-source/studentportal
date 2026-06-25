@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<a href="index.html" class="back-btn">
+⬅ Back to Home
+</a>
+
+<div class="form-container">
+
+<h1>📝 Event Registration Form</h1>
+
+<p>
+Fill in your details to participate
+in upcoming events.
+</p>
+
+<form onsubmit="showSuccess(event)">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="text"
+placeholder="Register Number"
+required>
+
+<input
+type="email"
+placeholder="College Email"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<select required>
+
+<option value="">
+Select Department
+</option>
+
+<option>
+Computer Science Engineering
+</option>
+
+<option>
+Information Technology
+</option>
+
+<option>
+Artificial Intelligence & Data Science
+</option>
+
+<option>
+Electronics & Communication Engineering
+</option>
+
+<option>
+Electrical & Electronics Engineering
+</option>
+
+<option>
+Mechanical Engineering
+</option>
+
+<option>
+Civil Engineering
+</option>
+
+</select>
+
+<select required>
+
+<option value="">
+Select Year
+</option>
+
+<option>1st Year</option>
+
+<option>2nd Year</option>
+
+<option>3rd Year</option>
+
+<option>4th Year</option>
+
+</select>
+
+<select required>
+
+<option value="">
+Select Event
+</option>
+
+<option>AI Workshop</option>
+
+<option>Cloud Computing Seminar</option>
+
+<option>Hackathon</option>
+
+<option>DevOps Workshop</option>
+
+<option>National Symposium</option>
+
+<option>Cyber Security Session</option>
+
+</select>
+
+<textarea
+placeholder="Why do you want to participate?"
+required>
+</textarea>
+
+<button type="submit">
+Register Now
+</button>
+
+<button type="reset">
+Reset Form
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+function showSuccess(event){
+
+event.preventDefault();
+
+alert(
+"🎉 Registration Successful!\n\nThank you for registering."
+);
+
+}
+
+</script>
+
+</body>
+
+</html>
