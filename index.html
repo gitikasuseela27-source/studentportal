@@ -5,20 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Title shown in browser tab -->
 <title>Student Event Management Portal</title>
 
-<!-- Linking external CSS file -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION BAR ================= -->
+<!-- NAVBAR -->
 <nav>
     <div class="logo">🎓 EventHub</div>
 
-    <!-- Navigation links to other pages -->
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
@@ -26,34 +23,25 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <!-- Dark mode toggle button -->
     <button id="darkBtn">🌙</button>
 </nav>
 
-<!-- ================= HERO SECTION ================= -->
+<!-- HERO SECTION -->
 <header class="hero">
 
-    <!-- Banner image stored in Azure Blob Storage -->
     <img src="https://studentportal127.blob.core.windows.net/assets/banner.jpg"
          alt="College Banner"
          class="banner-image">
 
     <div class="hero-content">
-
         <h1>Student Event Management Portal</h1>
-
-        <p>
-            Discover Workshops, Hackathons, Symposiums and Student Activities
-        </p>
-
-        <!-- Button redirects to events page -->
+        <p>Discover Workshops, Hackathons, Symposiums and Student Activities</p>
         <a href="events.html" class="btn">Explore Events</a>
-
     </div>
 
 </header>
 
-<!-- ================= AUDITORIUM SECTION ================= -->
+<!-- AUDITORIUM SECTION -->
 <section class="auditorium-section">
 
     <div class="auditorium-image">
@@ -62,14 +50,12 @@
 
     <div class="auditorium-text">
         <h2>College Auditorium</h2>
-        <p>
-            The auditorium hosts seminars, hackathons, workshops and cultural events.
-        </p>
+        <p>Hosting seminars, hackathons, workshops and cultural events.</p>
     </div>
 
 </section>
 
-<!-- ================= FEATURED EVENT ================= -->
+<!-- FEATURED EVENT -->
 <section class="featured-event">
 
     <h2>🔥 Featured Event</h2>
@@ -78,24 +64,24 @@
 
         <h3>National Level AI Hackathon 2026</h3>
 
-        <p>Real-world AI problem solving competition</p>
+        <p>Real-world AI challenge competition</p>
 
         <p><strong>Date:</strong> July 15, 2026</p>
-
         <p><strong>Venue:</strong> Main Auditorium</p>
 
+        <!-- REGISTER BUTTON -->
         <a href="register.html" class="btn">Register Now</a>
 
     </div>
 
 </section>
 
-<!-- ================= EVENT CATEGORIES ================= -->
+<!-- EVENT CATEGORIES -->
 <section class="categories">
 
     <h2>🎯 Event Categories</h2>
 
-    <!-- Clicking categories filters events using JS -->
+    <!-- JS FILTER FUNCTION CALLED HERE -->
     <div class="category-card" onclick="filterCategory('AI')">🤖 AI & ML</div>
     <div class="category-card" onclick="filterCategory('Cloud')">☁ Cloud Computing</div>
     <div class="category-card" onclick="filterCategory('Hackathon')">💻 Hackathons</div>
@@ -105,14 +91,13 @@
 
 </section>
 
-<!-- ================= GALLERY ================= -->
+<!-- GALLERY -->
 <section class="gallery">
 
     <h2>📸 Event Gallery</h2>
 
     <div class="gallery-grid">
 
-        <!-- Images stored in Azure Blob Storage -->
         <img src="https://studentportal127.blob.core.windows.net/assets/auditorium.jpg" alt="Auditorium">
         <img src="https://studentportal127.blob.core.windows.net/assets/ai.jpg" alt="AI Workshop">
         <img src="https://studentportal127.blob.core.windows.net/assets/cloud.jpg" alt="Cloud Seminar">
@@ -122,16 +107,17 @@
 
 </section>
 
-<!-- ================= COUNTDOWN TIMER ================= -->
+<!-- COUNTDOWN SECTION -->
 <section class="countdown">
 
     <h2>⏳ Next Hackathon Starts In</h2>
-    
-    <div id="timer"></div>
+
+    <!-- TIMER TARGET ELEMENT -->
+    <div id="timer">Loading timer...</div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 <footer>
 
     <h3>🎓 Student Event Management Portal</h3>
@@ -139,7 +125,7 @@
 
 </footer>
 
-<!-- Linking JavaScript file -->
+<!-- JS FILE -->
 <script src="js/script.js"></script>
 
 </body>
